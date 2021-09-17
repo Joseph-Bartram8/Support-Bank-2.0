@@ -15,26 +15,55 @@ namespace Practising_single_resposibility
             string path = @"C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\Transactions2014.csv";
             BankTransactions bankTransactions = new BankTransactions();
             List<Person> people = bankTransactions.RetrieveTransactions(path);
-            
-
-            foreach (Person person in people)
+            string input = null;
+            string holderName = null;
+            while (input == null)
             {
-                Console.WriteLine("Name: {0}, Balance: {1}", person.Name, person.Balance);
-                foreach (var transaction in person.userTans)
+                Console.WriteLine("Enter what you want to do: ");
+                Console.WriteLine("1.) List All\n2.) List [account holder]");
+                input = Console.ReadLine();
+                if (input == "1")
                 {
-                    Console.WriteLine("Date: {0}, From: {1}, To: {2}, Comment{3}, Amount{4}", transaction.date, transaction.fromName, transaction.toName, transaction.narrative, transaction.amount);
+                    foreach (Person person in people)
+                    {
+                        HoldOutput(person);
+                        Console.WriteLine();
+                    }
+                    Console.Read();
                 }
-                Console.WriteLine();
+                else if (input == "2")
+                {
+                    Console.WriteLine("PLease enter the name of the account holder: ");
+                    holderName = Console.ReadLine();
+                    foreach (Person person in people)
+                    {
+                        if (person.Name == holderName)
+                        {
+                            HoldOutput(person);
+                            Console.Read();
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect Input. Please input either '1' or '2'");
+                    input = null;
+                }
             }
+        }
 
-
-
-            Console.WriteLine("Hopefully it works now");
-            Console.Read();
+        static void HoldOutput(Person person)
+        {
+            Console.WriteLine("\nName: {0}, Balance: {1}", person.Name, person.Balance);
+            foreach (var transaction in person.userTans)
+            {
+                Console.WriteLine("Date: {0}, From: {1}, To: {2}, Comment{3}, Amount: {4}", transaction.date, transaction.fromName, transaction.toName, transaction.narrative, transaction.amount);
+            }
         }
     }
 
-
+    
+    // This class is used to setr the variables for the transactions to be printed in main
     class Transaction
     {
         public DateTime date;
@@ -55,6 +84,8 @@ namespace Practising_single_resposibility
 
     }
 
+
+    // Person class is used to create the list of peoples names.
     class Person
     {
         public string Name;
@@ -71,16 +102,18 @@ namespace Practising_single_resposibility
         }
     }
 
+
+    //BankTransactions is used to populate the different lists and reutrn all of that to the Main function through people
     class BankTransactions
     {
-        public BankTransactions()
-        {
 
-        }
+        //Below is the constructor
+        public BankTransactions() { }
 
+
+        //Below is the Function that retrieves the transactions from the csv file
         public List<Person> RetrieveTransactions(string path)
         {
-
             List<Person> people = new List<Person>();
 
             var logArray = File.ReadAllLines(path).Skip(1);
