@@ -1,0 +1,14 @@
+C:\Users\josep\OneDrive\Documents\UCAS Work\C# Coding\SupportBank-cs\Practising single resposibility\Practising single resposibility\bin\Debug\Practising single resposibility.exe.config
+C:\Users\josep\OneDrive\Documents\UCAS Work\C# Coding\SupportBank-cs\Practising single resposibility\Practising single resposibility\bin\Debug\Practising single resposibility.exe
+C:\Users\josep\OneDrive\Documents\UCAS Work\C# Coding\SupportBank-cs\Practising single resposibility\Practising single resposibility\bin\Debug\Practising single resposibility.pdb
+C:\Users\josep\OneDrive\Documents\UCAS Work\C# Coding\SupportBank-cs\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.csproj.AssemblyReference.cache
+C:\Users\josep\OneDrive\Documents\UCAS Work\C# Coding\SupportBank-cs\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\Documents\UCAS Work\C# Coding\SupportBank-cs\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.exe
+C:\Users\josep\OneDrive\Documents\UCAS Work\C# Coding\SupportBank-cs\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.pdb
+C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\bin\Debug\Practising single resposibility.exe.config
+C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\bin\Debug\Practising single resposibility.exe
+C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\bin\Debug\Practising single resposibility.pdb
+C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.csprojAssemblyReference.cache
+C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.csproj.CoreCompileInputs.cache
+C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.exe
+C:\Users\josephb\OneDrive - UCAS\Documents\C# Programming\Practising single resposibility\Practising single resposibility\obj\Debug\Practising single resposibility.pdb
