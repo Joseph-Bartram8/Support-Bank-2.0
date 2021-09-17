@@ -17,10 +17,11 @@ namespace Practising_single_resposibility
             List<Person> people = bankTransactions.RetrieveTransactions(path);
             string input = null;
             string holderName = null;
+            string myForeverLoop = null;
             while (input == null)
             {
                 Console.WriteLine("Enter what you want to do: ");
-                Console.WriteLine("1.) List All\n2.) List [account holder]");
+                Console.WriteLine("1.) List All\n2.) List [account holder]\n3.)End Program");
                 input = Console.ReadLine();
                 if (input == "1")
                 {
@@ -29,7 +30,7 @@ namespace Practising_single_resposibility
                         HoldOutput(person);
                         Console.WriteLine();
                     }
-                    Console.Read();
+                    input = null;
                 }
                 else if (input == "2")
                 {
@@ -40,9 +41,14 @@ namespace Practising_single_resposibility
                         if (person.Name == holderName)
                         {
                             HoldOutput(person);
-                            Console.Read();
+                            Console.WriteLine();
                         }
                     }
+                    input = null;
+                }
+                else if (input == "3")
+                {
+                    input = "1";
                 }
                 else
                 {
